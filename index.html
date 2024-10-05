@@ -29,6 +29,50 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            /* Distance from the bottom */
+            right: 20px;
+            /* Distance from the right */
+            background-color: #25D366;
+            /* WhatsApp green color */
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1000;
+            /* Make sure it stays on top */
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-button img {
+            width: 60px;
+            /* Adjust size of the WhatsApp logo */
+            height: 60px;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            /* Slightly enlarge on hover */
+        }
+
+
+
+        @keyframes smoothScroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+                /* Scroll halfway because the content is repeated */
+            }
+        }
+
+        .animate-scroll {
+            animation: smoothScroll 20s linear infinite;
+        }
     </style>
 </head>
 
@@ -385,41 +429,145 @@
         </div>
     </div>
 
- <!-- Testimonials Section -->
-<div class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-        <!-- Section Title -->
-        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">
-            What Our Clients Are Saying
-        </h2>
-        <!-- Testimonial Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Testimonial 1 -->
-            <div class="p-6 bg-white border rounded-lg shadow-lg">
-                <p class="text-gray-700 mb-4">
-                    "The service provided was exceptional. The team understood our needs and delivered beyond our expectations."
-                </p>
-                <p class="font-semibold text-gray-900">- John Doe, CEO</p>
-            </div>
-            <!-- Testimonial 2 -->
-            <div class="p-6 bg-white border rounded-lg shadow-lg">
-                <p class="text-gray-700 mb-4">
-                    "Outstanding results! Their innovative solutions helped us achieve great success. Highly recommend!"
-                </p>
-                <p class="font-semibold text-gray-900">- Sarah Johnson, Marketing Head</p>
-            </div>
-            <!-- Testimonial 3 -->
-            <div class="p-6 bg-white border rounded-lg shadow-lg">
-                <p class="text-gray-700 mb-4">
-                    "A truly professional experience. The collaboration was smooth, and we couldn’t be happier with the results."
-                </p>
-                <p class="font-semibold text-gray-900">- Michael Smith, Product Manager</p>
+    <!-- Testimonials Section -->
+    <div class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <!-- Section Title -->
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">
+                What Our Clients Are Saying
+            </h2>
+            <!-- Testimonial Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-6 bg-white border rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">
+                        "The service provided was exceptional. The team understood our needs and delivered beyond our
+                        expectations."
+                    </p>
+                    <p class="font-semibold text-gray-900">- John Doe, CEO</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="p-6 bg-white border rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">
+                        "Outstanding results! Their innovative solutions helped us achieve great success. Highly
+                        recommend!"
+                    </p>
+                    <p class="font-semibold text-gray-900">- Sarah Johnson, Marketing Head</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="p-6 bg-white border rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">
+                        "A truly professional experience. The collaboration was smooth, and we couldn’t be happier with
+                        the results."
+                    </p>
+                    <p class="font-semibold text-gray-900">- Michael Smith, Product Manager</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-  
+    <!-- We Worked With -->
+    <div class="bg-gray-100 py-8">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">Brands That Work With Us</h2>
+            <div class="relative overflow-hidden">
+                <div id="brands" class="flex space-x-8 animate-scroll">
+                    <!-- Brand logos (Repeat the brands to create an infinite loop) -->
+                    <img src="assets/images/brand_logos/Logo_1.webp" alt="Brand 1" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_2.webp" alt="Brand 2" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/logo_3.webp" alt="Brand 3" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_4.webp" alt="Brand 4" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_5.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/logo_6.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_7.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_8.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_9.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_10.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_11.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_12.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_13.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_14.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_15.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_16.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_17.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_18.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+                    <img src="assets/images/brand_logos/Logo_19.webp" alt="Brand 5" class="w-36 h-36 object-contain">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Contact Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+            alt="WhatsApp" />
+    </a>
+
+    <!-- Contact Us Banner -->
+    <section class="relative bg-[#020d26] text-white py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-70"
+            style="background-image: url('https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        <div class="relative z-10 container mx-auto text-center px-6 md:px-12">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">We’d Love to Hear from You!</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-md">Have any questions or
+                inquiries? Don’t hesitate to reach out! Your feedback and inquiries are important to us.</p>
+            <a href="/contact"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-10 rounded-full shadow-lg transition-transform transform duration-300 hover:scale-105">
+                Contact Us
+            </a>
+        </div>
+        <svg class="absolute left-0 transform -translate-x-1/2 -bottom-12 w-full h-auto" viewBox="0 0 1440 120"
+            preserveAspectRatio="none">
+            <path fill="#020d26"
+                d="M0,48L30,53.3C60,59,120,69,180,58.7C240,48,300,18,360,10.7C420,3,480,17,540,38.7C600,60,660,90,720,106.7C780,123,840,117,900,107.3C960,97,1020,83,1080,75.3C1140,67,1200,65,1260,66.7C1320,68,1380,72,1410,74.7L1440,77L1440,120L1410,120C1380,120,1320,120,1260,120C1200,120,1140,120,1080,120C1020,120,960,120,900,120C840,120,780,120,720,120C660,120,600,120,540,120C480,120,420,120,360,120C300,120,240,120,180,120C120,120,60,120,30,120H0V48Z">
+            </path>
+        </svg>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="bg-[#020d26] text-white py-12">
+    <div class="container mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-3xl font-semibold mb-4 border-b-2 border-blue-400 pb-2">About Us</h3>
+                <p class="text-sm mb-4">At Your Company, we focus on delivering top-notch products and services tailored to boost your business efficiency and success.</p>
+                <a href="/about" class="text-blue-400 hover:underline font-semibold transition duration-300">Learn More</a>
+            </div>
+
+            <div>
+                <h3 class="text-3xl font-semibold mb-4 border-b-2 border-blue-400 pb-2">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                    <li><a href="/about" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+                    <li><a href="/services" class="hover:text-blue-400 transition duration-300">Services</a></li>
+                    <li><a href="/contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-3xl font-semibold mb-4 border-b-2 border-blue-400 pb-2">Contact Us</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center"><span class="mr-2 text-blue-400">📞</span> +92-21-35073121</li>
+                    <li class="flex items-center"><span class="mr-2 text-blue-400">📞</span> +92-21-35076575</li>
+                    <li class="flex items-center"><span class="mr-2 text-blue-400">📞</span> +92-21-35075435</li>
+                    <li class="flex items-center"><span class="mr-2 text-blue-400">📞</span> +92-30-18230092</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm">
+            <p class="mb-2">Follow Us:</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">Facebook</a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">Twitter</a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">LinkedIn</a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition duration-300">Instagram</a>
+            </div>
+            <p class="mt-4">&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
 
 
@@ -441,7 +589,7 @@
                 nav.classList.remove('bg-gray-900', 'shadow-lg');
             }
         });
- 
+
     </script>
 </body>
 
